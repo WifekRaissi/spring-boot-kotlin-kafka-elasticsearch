@@ -106,8 +106,8 @@ data class Entities(
         val media:MutableList<Media>?
 )
 data class Extended_Entities(
-        val media:MutableList<Media>?,
-        val additional_media_info: Additional_media_info?
+        val media:Any?,
+        val additional_media_info: Any?
 )
 data class User(
         val utc_offset:Int?,
@@ -212,8 +212,8 @@ data class Statuses(
         val extended_entities: Extended_Entities?,
         val contributors:String?,
         val user: User?,
-        val retweeted_status: Statuses?,
-        val quoted_status: Statuses?
+        val retweeted_status: Any?,
+        val quoted_status: Any?
 )
 
 data class   Search_metadata(
@@ -225,7 +225,7 @@ data class   Search_metadata(
         val since_id:Int?,
         val completed_in:String?,
         val refresh_url:String?,
-        val next_results:Any
+        val next_results:Any?
 
 
 )
